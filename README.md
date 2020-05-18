@@ -3,7 +3,7 @@ This is a public repository for the Oregon State University ECE 44x Iceberg Expl
 
 # Overview
 
-The goal of this project was to modify a [BlueRov2](https://bluerobotics.com/store/rov/bluerov2/) to add the capability to
+The goal of this project was to modify a [BlueRov2](https://bluerobotics.com/store/rov/bluerov2/) to add the capability to:
 - attach to an iceberg and hold itself securely in place
 - take measurements of the rate at which the iceberg was melting
 
@@ -11,4 +11,38 @@ The primary development that took place between the 2019-2020 school year focuse
 
 # Iceberg Attachment Overview
 
-When our ECE team was in its brainstorming phase, we decided to forgo physically drilling into the ice, an idea inspired by [ice climbing equipment](https://www.rei.com/product/860670/petzl-laser-speed-ice-screw), to a much more mechanically simple method of melting into the ice and refreezing the hole created around our attachment points. For further information, including pattents that cover similar designs used previously, consult the written report on [Iceberg Attachment](TODO). 
+When our ECE team was in its brainstorming phase, we decided to forgo physically drilling into the ice, an idea inspired by [ice climbing equipment](https://www.rei.com/product/860670/petzl-laser-speed-ice-screw), to a much more mechanically simple method of melting into the ice and refreezing the hole created around our attachment points. For further information, including pattents that cover similar designs used previously, consult the written report on [Iceberg Attachment](TODO). To accomplish this, the design was split into two subsystems for the ECE team to work on.
+
+## Heating/Melting System
+
+After experiments with a small soldering iron melting into ice and a larger, copper tube heated by an electric water heater, and calculations outlining the energy needed to melt into a unit volume of ice, we decided that the best type of heater for this would be a [cartridge heater](https://www.mcmaster.com/heaters/heaters-for-plates-molds-and-dies/insertion-heaters-for-plates-molds-and-dies-7/) -- which is the best option when considering the need for a small diameter heating element. This was due to the additional heat (power) needed to melt a unit volume as the area increased with diameter. Additionally, the length of the heater should be as short as possible to prevent heat from dissipating from the area that is not touching the ice on initial insertion. For the first prototype, a heating element was enclosed in a copper sheath and attached to one end of a 1m long carbon fiber tube (we called it an 'arm'); the other end of the carbon fiber rod was attached to the ROV. There were three of those arms that would then melt into the iceberg and hold the ROV in place. The next prototype should select heaters (doesn't necessarily need to be cartridge heaters) that minimize length and diameter.
+
+## Heating Power Supply System
+
+After considering options for power and realistic battery storage, we have two ideas for power supply architectures:
+- DC to AC inverter
+- DC to DC converter
+
+There are advantages and disadvantages to both achitectures that will be discussed in the following sections.
+
+### DC to AC Inverter
+
+Advantages:
+- Readily available in modules
+  - Adds simplicity
+- Low cost
+
+Disadvantages:
+- Large size
+- Modules are not customizable for individual use cases
+
+### DC to DC Converter
+
+Advantages:
+- Small sizes can be achieved
+- Customizable for our application
+
+Disadvantages:
+- Higher cost
+- Additional complexity (design our own)
+- Modules are not as readily available

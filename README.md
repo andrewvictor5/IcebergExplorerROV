@@ -9,7 +9,7 @@ This is a public repository for the Oregon State University ECE 44x Iceberg Expl
 [Heating Power Supply System](#power)
 
 
-<a name="overview"/>
+<a name="overview"></a>
 # Overview
 
 The goal of this project was to modify a [BlueRov2](https://bluerobotics.com/store/rov/bluerov2/) to add the capability to:

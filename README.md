@@ -124,11 +124,22 @@ Our team did develop a schematic in KiCad for a potential design, but at this po
 
 #### Recomendation: 
 
+Our teams recomendation is to research power topologies that will allow for efficient conversion from 12V DC to 120V DC that also allows for expansion to lower voltage power needs (implement a 9V DC bus or add easy access to the 12V DC bus for external conversion). Most importantly, the circuit should be simulated to verify that it can, in fact, produce the necessary power output to drive the melting attachment plus any secondary devices. This simulation would be most effective if it was implemented in tandem with the [Hardware Simulation](#hw-sim) component. 
+
+#### Resources:
+
+[Example 12V DC to 120V DC Circuit](http://www.circuitstoday.com/12v-to-120v-dc-dc-converter)
+
 
 ### Melting Attachment System
 
+The Melting Attachment System might be the most complex yet important part of the system we tried to tackle. Through our prototypes, we've found a fiew rules of thum to adhere to when implementing this device. There is much more technical engineering to do for this device. 
+
+- 
+
 ### Software Simulation
 
+<a id='hw-sim'></a>
 ### Hardware Simulation
 
 ### Battery Pack Design

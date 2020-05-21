@@ -17,7 +17,7 @@ This is a public repository for the Oregon State University ECE 44x Iceberg Expl
 - [Wireless Control](#wireless)
   - [Computer Setup How-To](#w-computer-howto)
   - [Router Setup How-To](#w-router-howto)
-- [Future Work](#future-work)
+- [Next Steps](#future-work)
 - [Conclusion](#conclusion)
 - [FAQ](#faq)
 
@@ -109,7 +109,46 @@ There is still merit to debating which advantages take precidence over the disad
 **Update for long range WiFi system**
 
 <a name="future-work"></a>
-# Future Work
+# Next Steps
+
+The system in its current state is by no means feature complete. There are some key features that still need to be implemented by future teams. The goal of this section is to pave the pathway for an ECE group to work on this project in this future and bring it to completion.
+
+### Power Supply PCB
+
+Our team switched our power supply design to a 12V DC to 120V DC converter at the end of our project after building a prototype with a 12V DC to 120V AC inverter. The reasons for doing so are listed in [Heating Power Supply](#power). However, in switching, our team did not have enough time to:
+- Lay out components on a PCB board
+- Get the board fabricated and assemble the PCB
+- Do preliminary testing
+
+Our team did develop a schematic in KiCad for a potential design, but at this point there would be merit in starting from the ground up as there were additional power supply requirements (9V DC bus) that were recently added. 
+
+#### Recomendation: 
+
+
+### Melting Attachment System
+
+### Software Simulation
+
+### Hardware Simulation
+
+### Battery Pack Design
+
+### BlueRov2 Motor Configuration
+
+### Need for a Mechanical Engineer
+
+### Tool Arm Design
+
+### Sensor Selection
+
+### Additional Enclosure Design
+
+### Controls Design
+
+### Attachment Arm Design
+
+### BlueROV2 Deployment System
+
 
 <a name="conclusion"></a>
 # Conclusion

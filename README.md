@@ -133,9 +133,15 @@ Our teams recomendation is to research power topologies that will allow for effi
 
 ### Melting Attachment System
 
-The Melting Attachment System might be the most complex yet important part of the system we tried to tackle. Through our prototypes, we've found a fiew rules of thum to adhere to when implementing this device. There is much more technical engineering to do for this device. 
+The Melting Attachment System might be the most complex yet important part of the system we tried to tackle. Through our prototypes, we've found a fiew rules of thum to adhere to when implementing this device. There is much more technical engineering to do for this device! We were not able to complete the melting attachment system because prototyping a mostly mechanical system was unfortunately not something our team was properly prepared to deal with. If there is someone with a good, in depth, knowledge of thermodynamics (fluid thermo), they would be great at this part!
 
-- 
+#### Recomendation: 
+
+There are some pattents that would be useful to view for this specific system. In its current state, I do not think it will successfully attach the ROV to the iceberg because:
+- 1.) We haven't tested a heating system in a large body of water (you can think of this a big heat sink).
+- 2.) While ice below zero does solidly refreeze over the attachment system, we are not exactly sure if the ice is cold enough. 
+
+Therefore, there should be more research and experimentation to build a prototype that has `active cooling` such as a Peltier plate (uses power to cool back down the melted attachment to refreeze after melthing) or even a different heating elements. A rough surface (think lots of short little needles) could also bind to an icy surface and cool off fast enough to refreeze (I think). 
 
 ### Software Simulation
 

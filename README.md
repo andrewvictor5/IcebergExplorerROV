@@ -205,28 +205,100 @@ Do risk analysis to see if the system can benefit from consolodating batteries (
 <a id='motor-conf'></a>
 ### BlueRov2 Motor Configuration
 
+The BlueRov2's current motor configuration is set up so it has maximum manueverability. However, there is some thought that the motor configuration should be changed to increase the thrust that the ROV can exert on the iceberg to more securely attach itself. Our team did not complete this because it was out of the scope for our original project.
+
+#### Recomendation:
+
+Investigate the impact that configuring the motors to provide more lateral thrust would have on the ROV's ability to attach itself to the iceberg (is there enough force to press the heating attachments into the iceberg?). Weigh this benefit against the reduction in stability that the ROV would incur.
 
 <a id='mech'></a>
 ### Need for a Mechanical Engineer
 
+This project has a great need for a mechanical engineer. There are many components (Melting Attachment System) that would greatly benefit from having someone with knowledge working on this project with the team. There are some mechanical engineers that worked in the same lab as our team, but had other projects to work on and could not, very understandibly, dedicate time to designing components alongside our team. 
+
+#### Recomendation:
+
+The project should include a mechanical engineering team or single member with in-depth knowledege of mechanical design and thermodynamics in the future.
+
 <a id='tool-arm'></a>
 ### Tool Arm Design
+
+In the future, the ROV will need to have an arm that is able to either manipulate a sensor or actuate it towards the iceberg's surface. This was originally in our project's scope, but had to be eliminated as it was not a main focus for the first year milestone of the project.
+
+#### Recomendation:
+
+There are some complicated components to moving parts deep underwater. There are linear actuators that are waterproof but would need to be vetted to see if they meet the waterproof and anti-corrosive requirements for the project's environment. The tool arm should be remotely controllable and precise with its movements as the measurements posed to be taken are on a very small scale.
+
+#### Resources:
+
+- [Waterproof Linear Actuator for Marine Applications](https://progressiveactuators.com/product-industry/marine/)
 
 <a id='sensor'></a>
 ### Sensor Selection
 
+There are a few options of sensor selection for this project. By sensors, we are talking about a sensor that is able to measure the melting rate of the iceberg. We can characterize the melting rate of the iceberg by the velocity of gas particles that are desolved from the iceberg as it melts. This was originally in our project's scope, but had to be eliminated as it was not a main focus for the first year milestone of the project.
+
+#### Recomendation:
+
+There are three sensors our group was looking at to fulfill the needs of our sensor were:
+- [Ultra low-noise wide band hydrophone](https://www.kdpes.co.uk/product/h507a-hydrophone/)
+- [Mid-frequency vector sensor](#https://www.kdpes.co.uk/product/vs-209/)
+- [Low-frequency vector sensor](#https://www.kdpes.co.uk/product/vs-209/)
+
+The nice features with these sensors is that they also include capability to help with the navigation in low visibility areas around the ice field near and up to icebergs. Dr. Nash also has sensors that could be implemented, but have not been investigated in detail.
+
 <a id='add-enclosure'></a>
 ### Additional Enclosure Design
+
+There are enclosures available from BlueROV that can satisfy the current enclosure needs of the project. However, as the project continues to add new hardware (tool arm, sensor, battery PCB) there will be increased need to re-evaluate if the current enclosures we have are suitable. Making additional enclosures was originally in our project's scope, but had to be eliminated as it was not a main focus for the first year milestone of the project.
+
+#### Recomendation:
+
+The Research and Implementation report done by a 2019-2020 group member could have some key insights in what it would entail to design and manufacture a robust, waterproof enclosure. As the next team continues working on the project, evaluate if creating a custom enclosure would be benefitial for its new implementations of hardware.
+
+#### Resources:
+
+[Report on Enclosure Design](https://github.com/MattShilling/IcebergExplorerROV/blob/master/Heated_Attachment_and_Enclosure_Research.pdf)
 
 <a id='ctrls'></a>
 ### Controls Design
 
+Currently, the system is controlled via an XBox controller connected to a laptop running [QGroundControl](http://qgroundcontrol.com/). In the future, there might need to be development on either:
+
+- 1.) A more customized controler
+- 2.) The ability to execute automated sequences of manuevers with the press of one button.
+
+The customized controller is most likely a future-future goal as there is currently enough buttons on the XBox controller to support all forseable actions. The main work that needs to be done is figuring out how to initiate a custom sequence of commands via QGroundControl that the ROV can properly carry out. Our team did not complete this because it was out of the scope for our original project.
+
+#### Recomendation:
+
+There is another system layer connected to QGroundControl called [`ArduSub`](https://github.com/bluerobotics/ardusub-gitbook). There would be great value in looking through the source code of this system , understanding how it works, learning how additional features can be implemented to it, and how to replace the current firmware on the BlueROV with a custom version.
+
+#### Resources:
+
+- [QGroundControl GitHub Repository](https://github.com/mavlink/qgroundcontrol)
+
 <a id='attach-arm'></a>
 ### Attachment Arm Design
+
+The current design of the system specifies that the attachment arms be carbon fiber rods. There is some weaknesses to this design such as the ability to fracture when compressed, however, and it is brittle when machining to fit custom applications. Our team did not approach this concern because it was out of the scope for our original project.
+
+#### Recomendation:
+
+There are some routes to go here:
+- 1.) Look into carbon fiber composites (coated in epoxy).
+- 2.) Select another attachment arm material (aluminum).
+
+The fiber composite would be a quick switch, but there is some research needed to be done on the corrosive resistivity of the composite material and its ability to be machined. Looking into another attachment arm material such as aluminum could also prove beneficial as there are armatures that would also serve as attachment points for sub-systems or additional sensors.
 
 <a id='deploy'></a>
 ### BlueROV2 Deployment System
 
+In the future, the BlueROV2 will need to be deployed from a remotely controlled boat. The deployment system will also need to be remotely controlled. By deploying, we mean placed into the water and turned on, ready to go on a mission. Working on this deployment system was in our project's scope, but had to be eliminated as it was not a main focus for the first year milestone of the project.
+
+#### Recomendations:
+
+A design and prototype should be created that has the ability to lift and lower the ROV into the water in a stable configuration (no dropping into the ocean). This could end up being quite similar to a crane. There is a NASA program called SUBSEA that has a picture with an _extreme_ example of a [similar design](https://www.eurekalert.org/pub_releases/2019-05/uori-oas052919.php) (it's lifting something much heavier). The only design difference is that it would have to be remotely operated.
 
 <a name="conclusion"></a>
 # Conclusion

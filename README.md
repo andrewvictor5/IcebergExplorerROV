@@ -143,6 +143,10 @@ There are some pattents that would be useful to view for this specific system. I
 
 Therefore, there should be more research and experimentation to build a prototype that has `active cooling` such as a Peltier plate (uses power to cool back down the melted attachment to refreeze after melthing) or even a different heating elements. A rough surface (think lots of short little needles) could also bind to an icy surface and cool off fast enough to refreeze (I think). 
 
+#### Resources:
+
+[Report on Heating Attachment Design](https://github.com/MattShilling/IcebergExplorerROV/blob/master/Heated_Attachment_and_Enclosure_Research.pdf)
+
 ### Software Simulation
 
 <a id='hw-sim'></a>

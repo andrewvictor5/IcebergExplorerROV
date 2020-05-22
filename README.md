@@ -242,8 +242,8 @@ There are a few options of sensor selection for this project. By sensors, we are
 
 There are three sensors our group was looking at to fulfill the needs of our sensor were:
 - [Ultra low-noise wide band hydrophone](https://www.kdpes.co.uk/product/h507a-hydrophone/)
-- [Mid-frequency vector sensor](#https://www.kdpes.co.uk/product/vs-209/)
-- [Low-frequency vector sensor](#https://www.kdpes.co.uk/product/vs-209/)
+- [Mid-frequency vector sensor](https://www.kdpes.co.uk/product/vs-209/)
+- [Low-frequency vector sensor](https://www.kdpes.co.uk/product/vs-209/)
 
 The nice features with these sensors is that they also include capability to help with the navigation in low visibility areas around the ice field near and up to icebergs. Dr. Nash also has sensors that could be implemented, but have not been investigated in detail.
 

@@ -145,6 +145,7 @@ Our teams recomendation is to research power topologies that will allow for effi
 [Example 12V DC to 120V DC Circuit](http://www.circuitstoday.com/12v-to-120v-dc-dc-converter)
 
 
+<a id='melt-attach'></a>
 ### Melting Attachment System
 
 The Melting Attachment System might be the most complex yet important part of the system we tried to tackle. Through our prototypes, we've found a fiew rules of thum to adhere to when implementing this device. There is much more technical engineering to do for this device! We were not able to complete the melting attachment system because prototyping a mostly mechanical system was unfortunately not something our team was properly prepared to deal with. If there is someone with a good, in depth, knowledge of thermodynamics (fluid thermo), they would be great at this part!
@@ -167,22 +168,31 @@ Therefore, there should be more research and experimentation to build a prototyp
 <a id='hw-sim'></a>
 ### Hardware Simulation
 
+<a id='bp-design'></a>
 ### Battery Pack Design
 
+<a id='motor-conf'></a>
 ### BlueRov2 Motor Configuration
 
+<a id='mech'></a>
 ### Need for a Mechanical Engineer
 
+<a id='tool-arm'></a>
 ### Tool Arm Design
 
+<a id='sensor'></a>
 ### Sensor Selection
 
+<a id='add-enclosure'></a>
 ### Additional Enclosure Design
 
+<a id='ctrls'></a>
 ### Controls Design
 
+<a id='attach-arm'></a>
 ### Attachment Arm Design
 
+<a id='deploy'></a>
 ### BlueROV2 Deployment System
 
 

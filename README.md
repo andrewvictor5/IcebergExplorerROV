@@ -179,15 +179,32 @@ Number two could be a project on its own, but the benefits would be immense. You
 
 [Software In the Loop Testing](https://www.add2.co.uk/applications/sil/)
 
-
 <a id='hw-sim'></a>
 ### Hardware Simulation
+
+Similar to the [SIL simulation](#sw-sim) mentioned, hardware simulation would also come with its own great benefits. However, our team did not complete this because it was out of the scope for our original project. 
+
+#### Recomendation:
+
+Research [HITL Simulation](#https://en.wikipedia.org/wiki/Hardware-in-the-loop_simulation) and decide if it is within the scope of the project to work on. You will need to balanace the cost of labor setting up the system as well as the cost of purchasing a completely identical system to do testing on. HITL simiulation provides a great way to develop systems in parallel.
+
+#### Resources:
+
+- _Enhancing Embedded Systems Simulation: A Chip-Hardware-in-the-Loop Framework_ by Christian Köhler
+- _Hardware-in-the-loop simulation for a production system_ by Park, Sang C ; Chang, Minho
 
 <a id='bp-design'></a>
 ### Battery Pack Design
 
+In its current state, the system contains two separate batteries. One for powering the ROV and its motors, and the other for powering the Melting Attachment System. The issue with having two batteries is the space that having two separate battery enclosures takes up. However, there is some merit in keeping the systems separate, as isolating the ROV drive battery will prevent a [common mode failure](https://en.wikipedia.org/wiki/Common_cause_and_special_cause_(statistics)#Common_mode_failure_in_engineering) of the entire system. Our team did not complete this because it was out of the scope for our original project.
+
+#### Recomendation:
+
+Do risk analysis to see if the system can benefit from consolodating batteries (improvement on energy density). If you decide to carry forwards with making a battery pack, the [Power Supply PCB](#pwr-pcb) should be in the front of your mind when designing. Additionally, research into a [battery management system](#https://en.wikipedia.org/wiki/Battery_management_system) (BMS) will also be crucial.
+
 <a id='motor-conf'></a>
 ### BlueRov2 Motor Configuration
+
 
 <a id='mech'></a>
 ### Need for a Mechanical Engineer

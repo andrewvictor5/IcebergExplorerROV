@@ -165,6 +165,21 @@ Therefore, there should be more research and experimentation to build a prototyp
 <a id='sw-sim'></a>
 ### Software Simulation
 
+There is a great need for the ability to gain familiarity with the control system as well as practicing missions in a semi-realistic way. In the industry this is known as `Software In the Loop` simulation/testing and is a great way to avoid wasting thousands of dollars in equipment (and potentially even more in labor hours) if something goes wrong. Essentially, it is a way to catch things early (note: see [Hardware Simulation](#hw-sim)). Our team did not complete this because it was out of the scope for our original project. However, I can see some great use coming out of the development for SIL testing if this is going to be a multi-year project.
+
+#### Recomendation:
+
+There is many ways a future team could approach SIL testing, but the main concept is: come up with a way to either:
+- 1.) Isolate the software components of the project and find a way to test that.
+- 2.) Create a whole model of the ROV in software and simulate that.
+
+Number two could be a project on its own, but the benefits would be immense. You could create a virtual 3D environment and ROV that would model after what a real mission would be like. People working on the project could then run virtual missions, gaining familiarity with the operation and characteristics of the device. A downside to option number two is that it will take a lot of time and teams would have to do some sort of system identification on the BlueROV2.
+
+#### Resources:
+
+[Software In the Loop Testing](https://www.add2.co.uk/applications/sil/)
+
+
 <a id='hw-sim'></a>
 ### Hardware Simulation
 

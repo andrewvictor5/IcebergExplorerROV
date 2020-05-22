@@ -18,6 +18,19 @@ This is a public repository for the Oregon State University ECE 44x Iceberg Expl
   - [Computer Setup How-To](#w-computer-howto)
   - [Router Setup How-To](#w-router-howto)
 - [Next Steps](#future-work)
+  - [Power Supply PCB](#pwr-pcb)
+  - [Melting Attachment System](#melt-attach)
+  - [Software Simulation](#sw-sim)
+  - [Hardware Simulation](#hw-sim)
+  - [Battery Pack Design](#bp-design)
+  - [BlueRov2 Motor Configuration](#motor-conf)
+  - [Need for a Mechanical Engineer](#mech)
+  - [Tool Arm Design](#tool-arm)
+  - [Sensor Selection](#sensor)
+  - [Additional Enclosure Design](#add-enclosure)
+  - [Controls Design](#ctrls)
+  - [Attachment Arm Design](#attch-arm)
+  - [BlueROV2 Deployment System](#deploy)
 - [Conclusion](#conclusion)
 - [FAQ](#faq)
 
@@ -113,6 +126,7 @@ There is still merit to debating which advantages take precidence over the disad
 
 The system in its current state is by no means feature complete. There are some key features that still need to be implemented by future teams. The goal of this section is to pave the pathway for an ECE group to work on this project in this future and bring it to completion.
 
+<a id='pwr-pcb'></a>
 ### Power Supply PCB
 
 Our team switched our power supply design to a 12V DC to 120V DC converter at the end of our project after building a prototype with a 12V DC to 120V AC inverter. The reasons for doing so are listed in [Heating Power Supply](#power). However, in switching, our team did not have enough time to:
@@ -147,6 +161,7 @@ Therefore, there should be more research and experimentation to build a prototyp
 
 [Report on Heating Attachment Design](https://github.com/MattShilling/IcebergExplorerROV/blob/master/Heated_Attachment_and_Enclosure_Research.pdf)
 
+<a id='sw-sim'></a>
 ### Software Simulation
 
 <a id='hw-sim'></a>
